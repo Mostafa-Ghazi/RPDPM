@@ -9,7 +9,7 @@ Robust Parametric Disease Progression Modeling
 When you publish your research using this toolbox, please cite [1] as
 <br />
 <br />
-@Article{Ghazi2019,
+@article{Ghazi2019,
 <br />
   title = {Robust parametric modeling of {A}lzheimer's disease progression},
   <br />
@@ -43,7 +43,7 @@ When you publish your research using this toolbox, please cite [1] as
 # References
 [1] Mehdipour Ghazi, M., Nielsen, M., Pai, A., Modat, M., Cardoso, M.J., Ourselin, S., and Sørensen, L., 2019. Robust parametric modeling of Alzheimer’s disease progression. arXiv preprint arXiv:1908.05338.
 <br />
-[2] Jedynak, B.M., Lang, A., Liu, B., Katz, E., Zhang, Y., Wyman, B.T., Raunig, D., Jedynak, C.P., Caffo, B., Prince, J.L., 2012. A computational neurodegenerative disease progression score: method and results with the Alzheimer’s Disease Neuroimaging Initiative cohort. NeuroImage 63, 1478--1486.
+[2] Jedynak, B.M., Lang, A., Liu, B., Katz, E., Zhang, Y., Wyman, B.T., Raunig, D., Jedynak, C.P., Caffo, B., Prince, J.L., 2012. A computational neurodegenerative disease progression score: method and results with the Alzheimer’s Disease Neuroimaging Initiative cohort. NeuroImage 63, 1478–1486.
 <br />
 
 Contact: mostafa.mehdipour@gmail.com
