@@ -6,6 +6,26 @@ Robust Parametric Disease Progression Modeling
 <br />
 
 # Citation
+When you publish your research using this toolbox, please cite [1] as
+<br />
+<br />
+@Article{Ghazi2019,
+<br />
+  title = {Robust parametric modeling of {A}lzheimer's disease progression},
+  <br />
+  author = {Mehdipour Ghazi, Mostafa and Nielsen, Mads and Pai, Akshay and Modat, Marc and Cardoso, M Jorge and Ourselin, S{\'e}bastien and S{\o}rensen, Lauge},
+  <br />
+  journal = {arXiv preprint arXiv:1908.05338},
+  <br />
+  volume = {},
+  <br />
+  pages = {},
+  <br />
+  year = {2019},
+  <br />
+  publisher = {},
+  <br />
+}
 <br />
 
 # Algorithm
