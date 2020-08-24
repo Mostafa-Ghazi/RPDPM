@@ -3,6 +3,7 @@ Robust Parametric Disease Progression Modeling
 <br />
 
 # Description
+The robust parametric disease progression modeling (RPDPM) can be applied to time series regression and prediction tasks to jointly model the trajectories of dynamic features and to predict their temporal developments in sequential data with missing values. This toolbox is an implementation of the algorithm proposed in [1].
 <br />
 
 # Citation
@@ -32,7 +33,6 @@ When you publish your research using this toolbox, please cite [1] as
 <br />
 
 # Dependencies
-<br />
 MATLAB (9.8), Statistics and Machine Learning Toolbox (11.7), Optimization Toolbox (8.5).
 <br />
 
