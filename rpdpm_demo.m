@@ -232,10 +232,10 @@ for n = 1 : btstrp
     DPS_train(:, :, n) = dps(idx_btstrp2, :);
     
 end
-bic_avg = mean(BIC(logical(full(ind2vec(Iters_opt))))); % average BIC
-bic_std = std(BIC(logical(full(ind2vec(Iters_opt))))); % standard deviation of BICs
-nmae_valid_avg = mean(NMAE_valid(logical(full(ind2vec(Iters_opt))))); % average of normalized mean absolute errors
-nmae_valid_std = std(NMAE_valid(logical(full(ind2vec(Iters_opt))))); % standard deviation of normalized mean absolute errors
+bic_avg = mean(BIC(logical(full(sparse(Iters_opt, 1 : btstrp, ones(1, btstrp)))))); % average BIC
+bic_std = std(BIC(logical(full(sparse(Iters_opt, 1 : btstrp, ones(1, btstrp)))))); % standard deviation of BICs
+nmae_valid_avg = mean(NMAE_valid(logical(full(sparse(Iters_opt, 1 : btstrp, ones(1, btstrp)))))); % average of normalized mean absolute errors
+nmae_valid_std = std(NMAE_valid(logical(full(sparse(Iters_opt, 1 : btstrp, ones(1, btstrp)))))); % standard deviation of normalized mean absolute errors
 fprintf('Training BIC = %4.4f \x00B1 %4.4f \n', [bic_avg, bic_std]); % display training modeling performance
 fprintf('Validation NMAE = %4.4f \x00B1 %4.4f \n', [nmae_valid_avg, nmae_valid_std]); % display validation modeling performance
 
