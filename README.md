@@ -6,6 +6,23 @@ Robust Parametric Disease Progression Modeling
 The robust parametric disease progression modeling (RPDPM) can be applied to time series regression, prediction, and classification tasks to jointly model the trajectories of dynamic features or biomarkers, to predict the temporal developments, and to classify the clinical labels in sequential data with missing values. This toolbox is an implementation of the algorithm proposed in [1].
 <br />
 
+# Algorithm
+The algorithm, which is based on alternating M-estimation to address potential curve-fitting problems such as outliers, linearly transforms ages to disease progression scores and jointly fits logistic sigmoids to the longitudinal dynamics of biomarkers. The estimated parameters are then used to temporally order the biomarkers in the disease course and to predict biomarker values as well as to classify the clinical status per time point.
+<br />
+
+# Dependencies
+MATLAB (9.8), Statistics and Machine Learning Toolbox (11.7), Optimization Toolbox (8.5).
+<br />
+
+# Functions
+<br />
+
+# Inputs
+<br />
+
+# Outputs
+<br />
+
 # Citation
 When you publish your research using this toolbox, please cite [1] as
 <br />
@@ -27,23 +44,6 @@ When you publish your research using this toolbox, please cite [1] as
   publisher = {},
   <br />
 }
-<br />
-
-# Algorithm
-The algorithm, which is based on alternating M-estimation to address potential curve-fitting problems such as outliers, linearly transforms ages to disease progression scores and jointly fits logistic sigmoids to the longitudinal dynamics of biomarkers. The estimated parameters are then used to temporally order the biomarkers in the disease course and to predict biomarker values as well as to classify the clinical status per time point.
-<br />
-
-# Dependencies
-MATLAB (9.8), Statistics and Machine Learning Toolbox (11.7), Optimization Toolbox (8.5).
-<br />
-
-# Functions
-<br />
-
-# Inputs
-<br />
-
-# Outputs
 <br />
 
 # References
