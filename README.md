@@ -18,6 +18,21 @@ MATLAB (9.8), Statistics and Machine Learning Toolbox (11.7), Optimization Toolb
 <br />
 
 # Inputs
+rpdpm_demo.m
+<br />
+Line 28: a CSV file path containing columns with variable names 'SubjectID', 'Label', 'Age', and biomarkers or features. Missing labels must be assigned as empty cells and missing values need to be specified as NaN.
+<br />
+Line 72: ranges, the possible minimum and maximum values of each feature. If a feature range is unknown, it should be set as [-Inf, Inf].
+<br />
+Line 89: ratio_test, proportion of test subjects to all available subjects in data partitioning.
+<br />
+Line 90: classes, distinct class labels ordered w.r.t. disease progression.
+<br />
+Line 133: loss_type, robust estimation loss function type.
+<br />
+Line 134: fit_type, fitting function type.
+<br />
+Line 137: btstrp, number of bootstraps.
 <br />
 
 # Outputs
