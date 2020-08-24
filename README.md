@@ -30,6 +30,7 @@ When you publish your research using this toolbox, please cite [1] as
 <br />
 
 # Algorithm
+The algorithm, which is based on alternating M-estimation to address potential curve-fitting problems such as outliers, linearly transforms ages to disease progression scores and jointly fits logistic sigmoids to the longitudinal dynamics of biomarkers. The estimated parameters are then used to temporally order the biomarkers in the disease course and to predict biomarker values as well as to classify the clinical status per time point.
 <br />
 
 # Dependencies
