@@ -31,6 +31,11 @@ When you publish your research using this toolbox, please cite [1] as
 # Algorithm
 <br />
 
+# Dependencies
+<br />
+MATLAB (9.8), Statistics and Machine Learning Toolbox (11.7), Optimization Toolbox (8.5).
+<br />
+
 # Functions
 <br />
 
