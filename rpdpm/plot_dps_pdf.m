@@ -74,6 +74,6 @@ set(findobj(gcf, 'tag', 'Median'), 'Color', 'k'); set(findobj(gcf, 'tag', 'Box')
 
 % Stacking the two plots, aligning them, and saving the figure
 p1 = get(h1, 'Position'); p2 = get(h2, 'Position'); p1(2) = p2(2) + p2(4) + 0.012; p1(1) = p2(1); set(h1, 'pos', p1);
-print(h, '-dpng', 'fig_dps_pdf.png'); close; % save the figure
+print(h, '-dpng', './result/fig_dps_pdf.png'); close; % save the figure
 
 end
