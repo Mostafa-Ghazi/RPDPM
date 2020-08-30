@@ -86,7 +86,7 @@ for k = 1 : K
     set(gca, 'FontName', 'times', 'FontSize', 13, 'TickLength', [0.01, 0.01]);
     h_leg = legend(h_data, classes_extend, 'Location', 'northeastoutside', 'Orientation', 'vertical', 'FontSize', 14, 'TextColor', 'black'); legend boxoff;
     title(h_leg, 'Diagnosis');
-    print(h, '-dpng', ['fig_trajectory' num2str(k) '.png']); close; % save the figure
+    print(h, '-dpng', ['./result/fig_trajectory' num2str(k) '.png']); close; % save the figure
     
 end
 
@@ -107,6 +107,6 @@ hold off;
 ylim([0 1]), axis square, xlabel('DPS'), ylabel('Normalized biomarker value');
 set(gca, 'FontName', 'times', 'FontSize', 13, 'TickLength', [0.01, 0.01]);
 legend(h_plot, biomarkers, 'Location', 'northeastoutside', 'FontSize', 11, 'TextColor', 'black'); legend boxoff;
-print(h, '-dpng', 'fig_trajectories.png'); close; % save the figure
+print(h, '-dpng', './result/fig_trajectories.png'); close; % save the figure
 
 end
