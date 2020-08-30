@@ -33,6 +33,17 @@ MATLAB (tested with v9.8), Statistics and Machine Learning Toolbox (tested with 
 <br />
 
 # Outputs
+•	Training performance across all bootstraps (BIC) printed to the command window.
+<br />
+•	Validation performance across all bootstraps (NMAE) printed to the command window.
+<br />
+•	Testing performance across all bootstraps (NMAE and AUC) printed to the command window.
+<br />
+•	A saved figure displaying the estimated class-conditional likelihoods using the DPSs.
+<br />
+•	A saved figure displaying the temporal ordering of biomarkers in the disease course.
+<br />
+•	Saved Figures displaying the estimated trajectories per biomarker.
 <br />
 
 # Citation
