@@ -43,7 +43,7 @@ MATLAB (tested with v9.8), Statistics and Machine Learning Toolbox (tested with 
 <br />
 •	A saved figure displaying the temporal ordering of biomarkers in the disease course.
 <br />
-•	Saved Figures displaying the estimated trajectories per biomarker.
+•	Saved figures displaying the estimated trajectories per biomarker.
 <br />
 
 # Citation
