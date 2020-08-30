@@ -11,7 +11,7 @@ The algorithm, which is based on alternating M-estimation to address potential c
 <br />
 
 # Dependencies
-MATLAB (9.8), Statistics and Machine Learning Toolbox (11.7), Optimization Toolbox (8.5).
+MATLAB (tested with v9.8), Statistics and Machine Learning Toolbox (tested with v11.7), Optimization Toolbox (tested with v8.5).
 <br />
 
 # Functions
