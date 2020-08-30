@@ -58,6 +58,6 @@ string_color = repmat(order_freq(:) > mean_color, 1, 3); % choose white or black
 set(h_string, {'Color'}, num2cell(string_color, 2)); % change the text colors
 set(gca, 'Ticklength', [0 0], 'XTick', [1 : 1 : numel(biomarker)], 'YTick', [1 : 1 : numel(biomarker)], 'YTickLabel', biomarker, 'FontSize', 10, 'FontName', 'times');
 xlabel('Event position'), ylabel('Biomarker'), title({'Temporal Ordering', ''});
-print(h, '-dpng', 'fig_marker_order.png'); close; % save the figure
+print(h, '-dpng', './result/fig_marker_order.png'); close; % save the figure
 
 end
