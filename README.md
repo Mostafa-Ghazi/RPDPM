@@ -15,7 +15,7 @@ MATLAB (tested with v9.8), Statistics and Machine Learning Toolbox (tested with 
 <br />
 
 # Inputs
-•	A CSV file containing age information, labels, and measurements in columns under variable names 'SubjectID', 'Label', 'Age', and 'Features'. Missing labels and missing values need to be assigned as empty cells and NaN, respectively.
+•	A CSV file containing age information, labels, and measurements in columns under variable names 'SubjectID', 'Label', 'Age', and 'Features'. Missing labels and missing values need to be assigned as empty cell and NaN, respectively.
 <br />
 •	The minimum and maximum values of each feature. If a feature range is unknown, it should be set as [-Inf, Inf].
 <br />
