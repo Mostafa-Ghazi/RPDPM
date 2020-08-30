@@ -15,17 +15,36 @@
 
 % Training, validation, and testing the proposed model for biomarker value prediction and clinical status classification using a simulated data 
 
-%% Data Preparation
-
-tic
-
 restoredefaultpath
 close all
 clear
 clc
 
+% Input data file
+input_data = './data/simulation_data.csv';
+
+% Ranges of biomarkers
+ranges = [0 30; 0 Inf; -Inf Inf];
+
+% Proportion of test subjects to entire data
+ratio_test = 0.2;
+
+% Distinct class labels ordered w.r.t. disease progression
+classes = {'CN', 'MCI', 'AD'};
+
+% Optimization parameters
+loss_type = 'logistic'; % robust estimation loss function type
+fit_type = 'proposed'; % fitting function type
+L_max = 50; % maximum number of alternating iterations
+L_min = 10; % minimum number of alternating iterations
+btstrp = 1; % number of bootstraps
+
+%% Data Preparation
+
+tic
+
 % Reading the longitudinal data
-data = readtable('./data/simulation_data.csv');
+data = readtable(input_data);
 addpath('./rpdpm'); % add path to the source codes
 
 % Extracting desired fields from the longitudinal data
@@ -69,7 +88,6 @@ diagnose = cell(2, I); % first and last diagnosis of subjects
 diagnose(:, sum(idx_labels, 2) > 0) = [labels_exist(idx_labels_first); labels_exist(idx_labels_last)];
 
 % Filtering data by rejecting outliers
-ranges = [0 30; 0 Inf; -Inf Inf]; % ranges of biomarkers
 for k = 1 : K
     idx_ij = find(~isnan(y(k, :)));
     y_k = y(k, idx_ij);
@@ -86,8 +104,6 @@ diagnose(:, idx_rmv) = [];
 subjects(idx_rmv, :) = [];
 
 % Splitting data to training and test subsets
-ratio_test = 0.2; % proportion of test subjects to entire data
-classes = {'CN', 'MCI', 'AD'}; % distinct class labels ordered w.r.t. disease progression
 num_points = sum(sum(~isnan(y), 3), 1); % number of available points per subject
 idx_test = []; % indices of test subjects
 rng(0); % random number generation seed
@@ -130,11 +146,6 @@ tic
 
 % Optimization options
 optim_options = optimoptions('lsqnonlin', 'Display', 'none', 'Jacobian', 'off', 'DerivativeCheck', 'off', 'MaxIter', 1e+3, 'TolFun', 1e-6, 'TolX', 1e-6, 'Algorithm', 'trust-region-reflective');
-loss_type = 'logistic'; % robust estimation loss function type
-fit_type = 'proposed'; % fitting function type
-L_max = 50; % maximum number of alternating iterations
-L_min = 10; % minimum number of alternating iterations
-btstrp = 1; % number of bootstraps
 
 % Parameter initialization for different bootstraps
 Idx_train = zeros(I1, btstrp);
