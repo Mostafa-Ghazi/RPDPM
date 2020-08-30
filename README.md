@@ -14,13 +14,10 @@ The algorithm, which is based on alternating M-estimation to address potential c
 MATLAB (tested with v9.8), Statistics and Machine Learning Toolbox (tested with v11.7), Optimization Toolbox (tested with v8.5).
 <br />
 
-# Functions
-<br />
-
 # Inputs
-•	A CSV file containing columns with variable names 'SubjectID', 'Label', 'Age', and biomarkers or features. Missing labels must be assigned as empty cells and missing values need to be specified as NaN.
+•	A CSV file containing age information, labels, and measurements in columns under variable names 'SubjectID', 'Label', 'Age', and 'Features'. Missing labels and missing values need to be assigned as empty cells and NaN, respectively.
 <br />
-•	The possible minimum and maximum values of each biomarker/feature. If a feature range is unknown, it should be set as [-Inf, Inf].
+•	The minimum and maximum values of each feature. If a feature range is unknown, it should be set as [-Inf, Inf].
 <br />
 •	Proportion of test subjects to all available subjects in data partitioning.
 <br />
@@ -29,6 +26,8 @@ MATLAB (tested with v9.8), Statistics and Machine Learning Toolbox (tested with 
 •	Robust estimation loss function type.
 <br />
 •	Fitting function type.
+<br />
+•	The minimum and maximum number of alternating iterations.
 <br />
 •	Number of bootstraps.
 <br />
