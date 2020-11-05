@@ -56,15 +56,15 @@ When you publish your research using this toolbox, please cite [1] as
   <br />
   author = {Mehdipour Ghazi, Mostafa and Nielsen, Mads and Pai, Akshay and Modat, Marc and Cardoso, M Jorge and Ourselin, S{\'e}bastien and S{\o}rensen, Lauge},
   <br />
-  journal = {arXiv preprint arXiv:1908.05338},
+  journal = {NeuroImage},
   <br />
-  volume = {},
+  volume = {225},
   <br />
-  pages = {},
+  pages = {117460},
   <br />
-  year = {2019},
+  year = {2020},
   <br />
-  publisher = {},
+  publisher = {Elsevier},
   <br />
 }
 <br />
