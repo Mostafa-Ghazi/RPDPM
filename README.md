@@ -50,7 +50,7 @@ MATLAB (tested with v9.8), Statistics and Machine Learning Toolbox (tested with 
 When you publish your research using this toolbox, please cite [1] as
 <br />
 <br />
-@article{Ghazi2019,
+@article{Ghazi2020,
 <br />
   title = {Robust parametric modeling of {A}lzheimer's disease progression},
   <br />
