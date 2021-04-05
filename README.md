@@ -62,7 +62,7 @@ When you publish your research using this toolbox, please cite [1] as
   <br />
   pages = {117460},
   <br />
-  year = {2020},
+  year = {2021},
   <br />
   publisher = {Elsevier},
   <br />
@@ -70,7 +70,7 @@ When you publish your research using this toolbox, please cite [1] as
 <br />
 
 # References
-[1] Mehdipour Ghazi, M., Nielsen, M., Pai, A., Modat, M., Cardoso, M.J., Ourselin, S., and Sørensen, L., 2019. Robust parametric modeling of Alzheimer’s disease progression. arXiv preprint arXiv:1908.05338.
+[1] Mehdipour Ghazi, M., Nielsen, M., Pai, A., Modat, M., Cardoso, M.J., Ourselin, S., and Sørensen, L., 2019. Robust parametric modeling of Alzheimer’s disease progression. NeuroImage 225, 117460.
 <br />
 [2] Jedynak, B.M., Lang, A., Liu, B., Katz, E., Zhang, Y., Wyman, B.T., Raunig, D., Jedynak, C.P., Caffo, B., Prince, J.L., 2012. A computational neurodegenerative disease progression score: method and results with the Alzheimer’s Disease Neuroimaging Initiative cohort. NeuroImage 63, 1478–1486.
 <br />
