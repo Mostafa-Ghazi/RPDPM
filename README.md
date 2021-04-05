@@ -64,9 +64,7 @@ When you publish your research using this toolbox, please cite [1] as
   <br />
   year = {2021},
   <br />
-  publisher = {Elsevier},
-  <br />
-}
+  publisher = {Elsevier},}
 <br />
 
 # References
